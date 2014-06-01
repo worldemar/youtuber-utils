@@ -2,7 +2,8 @@ youtuber-utils
 ==============
 
 This is colelction of scripts to help you capture, edit and publish videos
-to video hosting services like youtube.
+to video hosting services like youtube as well as stream to twitch.tv,
+goodgame.ru or similar broadcasting service.
 
 The only purpose of these scripts is to provide "glue" between popular
 software packages, so before you start make sure you have latest versions of
