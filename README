@@ -1,25 +1,50 @@
-youtuber-utils
-==============
 
-This is colelction of scripts to help you capture, edit and publish videos
+	ABOUT
+	=====
+
+This is a collection of scripts to help you capture, edit and publish videos
 to video hosting services like youtube as well as stream to twitch.tv,
 goodgame.ru or similar broadcasting service.
+
+
+	GETTING STARTED
+	===============
 
 The only purpose of these scripts is to provide "glue" between popular
 software packages, so before you start make sure you have latest versions of
 
- - ffmpeg (http://ffmpeg.org/) - very powerful video processing package
-   nothing will work without this, all scripts use it.
+ - FFmpeg (http://ffmpeg.org/) - very powerful video processing package
+   Nothing will work without this, all scripts use it.
 
  - glgrab (https://github.com/const86/glgrab) - very fast GL grabber
-   i recommend this if you want to capture videogames, OpenGL apps or
+   I recommend this if you want to capture videogames, OpenGL apps or
    DirectX apps under WINE. Keep in mind that "grabbing" part of glgrab
    must match your application's architecture, so you will need 32-bit glgrab
    for 32-bit WINE.
    For other purposes "x11grab" driver for ffmpeg might be sufficient.
 
  - cinelerra (http://cinelerra.org/) - powerful video editor
-   you will probably want to edit your footage before publishing,
+   You will probably want to edit your footage before publishing,
    youtuber-utils will provide cinelerra-compatible output.
 
-See individual scripts for detailed explanation about them.
+See also individual scripts for detailed explanation about them.
+
+
+	PACKAGE CONTENTS
+	================
+
+config.sh	Example configuration file. Contains information about your
+		setup: device names, grabbing settings, desirable paths.
+		Feel free to modify any of these settings, as most of them are
+		hardware- or system-specific.
+
+preview_*	Preview scripts. Will provide basic testing for your config.sh
+		and visual representation of what will be actually captured.
+
+ffgrab_*	FFmpeg-based grabbing scripts. These will grab videos and
+		store them in files.
+
+ffpreset	Directory with presets for FFmpeg. In order to use them you
+		must copy them into ~/.ffmpeg
+
+
