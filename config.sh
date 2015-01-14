@@ -19,13 +19,13 @@ VINPUT_GL_PARAMS="-s 1920x1080 -framerate 30"
 # AUDIO INPUT DEVICES
 #
 
-# (use pactl | grep Name to get list of devices)
+# (use pactl list sources | grep Name to get list of devices)
 # select your preferred mic (note that it should be "alsa_input")
-AINPUT_MIC_DEV="alsa_input.usb-Shure_Incorporated_Shure_Digital-00-Digital.analog-stereo"
+AINPUT_MIC_DEV="alsa_input.usb-Line_6_UX2-00-PODStudioUX2.analog-stereo"
 AINPUT_MIC_PARAMS="-sample_rate 48000"
 
 # select "monitor" of your output so game/playback audio will also be recorded
-AINPUT_SND_DEV="alsa_output.usb-Shure_Incorporated_Shure_Digital-00-Digital.analog-stereo.monitor"
+AINPUT_SND_DEV="alsa_output.usb-Line_6_UX2-00-PODStudioUX2.analog-stereo.monitor"
 AINPUT_SND_PARAMS="-sample_rate 48000"
 
 #
