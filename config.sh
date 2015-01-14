@@ -33,20 +33,3 @@ AINPUT_SND_PARAMS="-sample_rate 48000"
 #
 
 OUTPUT_FILENAME_PREFIX=$(date +"%Y%m%d_%H%M%S")
-
-#
-# SANITY CHECK
-#
-
-# everything below must check that config has no obvious flaws
-# (nonexistent devices selected, etc) and fail with appropriate message
-
-function check_exists() {
-    if [[ ! -e ${1} ]]; then
-	echo "Sanity check failed: ${1} does not exist"
-	exit 1
-    fi
-}
-
-check_exists ${VINPUT_GL_DEV}
-check_exists ${VINPUT_CAM_DEV}
