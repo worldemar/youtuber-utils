@@ -15,6 +15,9 @@ VINPUT_CAM_PARAMS="-s 640x480 -input_format yuyv422 -framerate 30"
 VINPUT_GL_DEV="/dev/shm/glgrab*"
 VINPUT_GL_PARAMS="-s 1920x1080 -framerate 30"
 
+VINPUT_X11_DEV=":0.0"
+VINPUT_X11_PARAMS="-s 1920x1080 -framerate 30"
+
 #
 # AUDIO INPUT DEVICES
 #
