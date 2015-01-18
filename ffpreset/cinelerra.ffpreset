@@ -1,9 +1,0 @@
-
-vcodec=libx264
-preset=ultrafast
-qp=18
-me_range=0
-g=15
-i_qfactor=1
-
-acodec=pcm_s16le

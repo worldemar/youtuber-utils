@@ -1,8 +1,0 @@
-
-vcodec=libx264
-preset=fast
-b:v=3000000
-g=15
-
-acodec=mp3
-b:a=256k

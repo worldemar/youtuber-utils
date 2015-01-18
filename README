@@ -23,10 +23,6 @@ software packages, so before you start make sure you have latest versions of
    for 32-bit WINE.
    For other purposes "x11grab" driver for ffmpeg might be sufficient.
 
- - cinelerra (http://cinelerra.org/) - powerful video editor
-   You will probably want to edit your footage before publishing,
-   youtuber-utils will provide cinelerra-compatible output.
-
 See also individual scripts for detailed explanation about them.
 
 
