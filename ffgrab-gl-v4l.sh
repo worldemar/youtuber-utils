@@ -22,7 +22,8 @@ glgrab64-av ffmpeg \
 	    -map 2 \
 	    -c:v libx264 \
 	    -preset ultrafast -crf 18 -me_range 0 -i_qfactor 1 \
-	    -map 3 \
-	    -c:a libmp3lame -b:a 256k \
-	    -f mp4 -r:v 30 \
 	    ${OUTPUT_FILENAME_PREFIX}_c.mp4
+	    -map 3 \
+	    -c:a pcm_s16le \
+	    -f wav \
+	    ${OUTPUT_FILENAME_PREFIX}_c.wav

@@ -16,7 +16,7 @@ source config.sh
 
 glgrab64-av ffmpeg \
 	    -vsync cfr \
-	    -f glgrab ${VINPUT_X11_PARAMS} -i ${VINPUT_X11_DEV} \
+	    -f x11grab ${VINPUT_X11_PARAMS} -i ${VINPUT_X11_DEV} \
 	    -f pulse ${AINPUT_SND_PARAMS} -i ${AINPUT_SND_DEV} \
 	    -f pulse ${AINPUT_MIC_PARAMS} -i ${AINPUT_MIC_DEV} \
 	    -filter_complex "[1:0][2:0]amerge=inputs=2" \
